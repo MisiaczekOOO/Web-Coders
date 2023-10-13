@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node-sass css/style.css scss/main.scss -w"
+    "test": "node-sass scss/main.scss css/style.css -w"
   },
   "author": "",
   "license": "ISC",

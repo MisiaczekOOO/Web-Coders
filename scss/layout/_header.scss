@@ -1,0 +1,57 @@
+//header
+
+.header{
+    min-height: 80vh;
+    padding-block: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__title{
+        line-height: 1;
+        margin-bottom: 4rem;
+        font-size: 7.2rem;
+        text-transform: uppercase;
+    }
+
+    &__link{
+        display: flex;
+        gap: 1rem;
+        font-size: 8.6rem;
+        transition: all 0.3s;
+
+        &:hover{
+            scale: 1.05;
+        }
+
+        &--heading{
+            color: $color-primary;
+            line-height: 85%;
+        }
+
+        &--icon{
+            width: 50px;
+        }
+    }
+
+    &__description{
+        font-size: 2rem;
+        text-transform: none;
+        width: 500px;
+        align-self: center;
+        text-align: center;
+        cursor: default;
+        
+
+        &:hover{
+            .u--addon{
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__cta-box{
+        display: inline;
+    }
+
+}
