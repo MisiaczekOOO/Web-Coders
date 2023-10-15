@@ -1,1 +1,39 @@
 //sections
+
+.section-about{
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading{
+        font-size: 6.4rem;
+    }
+}
+
+.section-courses{
+    &__content{
+        display: flex;
+    }
+
+    &__desc{
+        max-width: 700px;
+        &--heading{
+            font-size: 6.4rem;
+            line-height: 100%;
+            margin-bottom: 1.6rem;
+        }
+
+        &--text{
+            font-size: 2.4rem
+        }
+
+    }
+
+    &__image{
+        img{
+            max-width: 100%;
+        }
+    }
+}

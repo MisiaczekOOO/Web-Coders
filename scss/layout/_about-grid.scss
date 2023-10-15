@@ -1,0 +1,31 @@
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, #{"min(100%, max(300px, 100%/2))"}));
+    max-width: 800px;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &--heading{
+            color: $color-primary;
+            font-size: 3.6rem;
+            line-height: 1;
+            margin-bottom: 1.6rem;
+
+        }
+
+        &--text{
+            color: grey;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__img{
+        max-width: 100%;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+

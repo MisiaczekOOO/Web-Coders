@@ -1,0 +1,17 @@
+.btn{
+    color: white;
+    font-size: 3.2rem;
+    padding: 1rem 3rem;
+    line-height: 100%;
+    text-align: center;
+    &--about{
+        background-color: $color-background-light;
+        border-radius: 0.8rem;
+    }
+
+    &--courses{
+        background-color: $color-primary-light;
+        border-radius: 0.8rem;
+
+    }
+}

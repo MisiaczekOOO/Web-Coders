@@ -4,44 +4,68 @@
     min-height: 80vh;
     padding-block: 10rem;
     display: flex;
-    align-items: center;
+    gap: 2rem;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &__title{
         line-height: 1;
-        margin-bottom: 4rem;
-        font-size: 7.2rem;
         text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2rem;
+        *{
+            display: block;
+        }
+        &--big{
+            font-size: 6.4rem;
+        }
+
+        &--small{
+            font-size: 4.8rem;
+        }
+    }
+
+    &__content{
+        display: flex;
+        gap: 5%;
+        justify-content: center;
+
+    }
+
+    &__link-box{
+        margin-bottom: -5px;
     }
 
     &__link{
         display: flex;
         gap: 1rem;
-        font-size: 8.6rem;
+        font-size: 9.6rem;
         transition: all 0.3s;
+        line-height: 80%;
 
         &:hover{
-            scale: 1.05;
+            scale: 1.02;
         }
 
         &--heading{
             color: $color-primary;
-            line-height: 85%;
+            line-height: 80%;
         }
 
         &--icon{
-            width: 50px;
+            width: 25px;
         }
     }
 
     &__description{
         font-size: 2rem;
         text-transform: none;
-        width: 500px;
+        max-width: 600px;
         align-self: center;
-        text-align: center;
         cursor: default;
-        
+        padding-inline: 8px;
+        margin-bottom: 3.2rem;
 
         &:hover{
             .u--addon{
@@ -50,8 +74,62 @@
         }
     }
 
-    &__cta-box{
-        display: inline;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
+    &__cta-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+    }
+
+}
+
+@media (max-width: 1100px){
+    html{
+        font-size: 50%; //1 rem = 10px; 10px/16px = 62.5%
+
+    }
+    .header{
+
+        &__content{
+            flex-direction: column;
+        }
+
+
+        &__link{
+            &--icon{
+                display: none;
+            }
+        }
+
+        &__cta-box{
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        &__link-box{
+            align-self: center;
+            margin-bottom: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    html{
+        font-size: 40%;
+    }
+
+    .header{
+        &__link-box{
+            margin-bottom: 1.6rem;
+            align-self: center;
+        }
+    }
+
 
 }

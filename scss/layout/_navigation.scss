@@ -5,14 +5,14 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: $padding-website-default;
+    top: 0;
     left: 0;
     width: 100%;
 
     font-size: 1.6rem;
 
-    padding-inline: $padding-website-default;
-
+    padding: $padding-website-default;
+    
     backdrop-filter: blur(5px);
 
     &__logo{
