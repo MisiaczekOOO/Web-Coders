@@ -11,7 +11,7 @@
 
     font-size: 1.6rem;
 
-    padding: $padding-website-default;
+    padding: 1rem $padding-website-default/2;
     
     backdrop-filter: blur(5px);
 
@@ -32,11 +32,23 @@
 
         &--item{
             color: $color-white;
+            font-size: 1.6rem;
         }
 
         &--contact{
             background-color: $color-primary;
             padding: 1rem 3rem;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 575px){
+    .nav{
+        &__ul{
+            display: none;
         }
     }
 }
