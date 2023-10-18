@@ -2,19 +2,24 @@
 
 .header{
     min-height: 80vh;
-    padding-block: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
     &__content{
         display: flex;
-        flex-direction: column;
-        gap: 0;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin-bottom: 4.8rem;
     }
+
     &__title{
         line-height: 1;
         text-transform: uppercase;
         display: inline-block;
+        margin-bottom: 1rem;
         *{
             display: block;
         }
@@ -27,59 +32,70 @@
         }
     }
 
-    // &__content{
-
-    // }
-
-    &__link-box{
-        margin-bottom: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        align-items: flex-start;
-        margin-left: -7px;
+    &__description{
+        font-size: 2.4rem;
+        line-height: 140%;
+        max-width: 600px;
+        color: $color-text-grey;
+        // margin-bottom: 1.6rem;
     }
 
-    &__link{
+    &__card-box{
         display: flex;
-        gap: 1rem;
-        font-size: 9.6rem;
-        transition: all 0.3s;
-        line-height: 80%;
-        justify-content: flex-start;
-        &:hover{
-            scale: 1.02;
-        }
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 
+    &__card{
+        border-radius: 1.6rem;
+        position: relative;
         &--heading{
             color: $color-primary;
-            line-height: 80%;
+            font-size: 4.8rem;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            line-height: 1;
         }
 
-        &--icon{
-            width: 25px;
-        }
-    }
+        &__list{
+            list-style: none;
+            opacity: 0.2;
+            transition: all 0.3s;
+            &--item{
+                color: $color-text-grey;
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                display: flex;
+                gap: 0.8rem;
+            }
 
-    &__description{
-        font-size: 2rem;
-        text-transform: none;
-        max-width: 600px;
-        cursor: default;
-        margin-bottom: 3.2rem;
-        margin-left: 3px;
-        color: $color-text-grey;
-        &:hover{
-            .u--addon{
-                color: $color-primary;
+            &--icon{
+                max-width: 2rem;
             }
         }
-    }
 
-    &__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        &:hover{
+            .header{
+                &__card{
+
+                    &__list{
+                        opacity: 0.8;
+                    }
+                    &--heading{
+                        scale: 1.05;
+                        transform: translateX(10px);
+                    }
+                    
+                    &--icon{
+                        opacity: 0.8;
+                    }
+                }
+
+            }
+            
+        }
     }
 
     &__cta-box{
@@ -87,76 +103,12 @@
         align-items: flex-start;
         gap: 1.6rem;
     }
-
-    &__stats{
-        display: flex;
-        gap: 1rem;
-    }
-
-    &__stats-item{
-        background-color: $color-background-dark;
-        border-radius: 0.8rem;
-        padding: 1.6rem;
-
-        &--heading{
-            color: $color-primary-light;
-            font-size: 2.4rem;
-        }
-
-        &--desc{
-            font-size: 1.6rem;
-        }
-    }
-
 }
 
-@media (max-width: 1100px){
-    html{
-        font-size: 50%; //1 rem = 10px; 10px/16px = 62.5%
+// @media (max-width: 1100px){
+    
+// }
 
-    }
-    .header{
+// @media (max-width: 575px){
 
-        &__content{
-            flex-direction: column;
-        }
-
-
-        &__link{
-            &--icon{
-                display: none;
-            }
-        }
-
-        &__cta-box{
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        &__link-box{
-            align-self: center;
-            margin-bottom: 1.6rem;
-        }
-    }
-}
-
-@media (max-width: 575px){
-    html{
-        font-size: 40%;
-    }
-
-    .header{
-        &__link-box{
-            margin-bottom: 1.6rem;
-            align-self: center;
-        }
-    }
-
-    .nav{
-        &__ul{
-            display: none;
-        }
-    }
-
-
-}
+// }
