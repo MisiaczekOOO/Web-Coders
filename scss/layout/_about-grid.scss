@@ -30,20 +30,3 @@
 
     }
 }
-
-@media (max-width: 1040px){
-    html{
-        font-size: 30%;
-    }
-    .about-grid{
-        grid-template-columns: repeat(auto-fit, minmax(0, #{"min(100%, max(800px , 100%/2))"}));
-        &__img{
-            display: none;
-        }
-    }
-}
-
-@media (max-width: 575px){
-
-}
-
