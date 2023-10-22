@@ -13,9 +13,12 @@ html {
     font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
 
+main,nav,footer{
+    padding-inline: $padding-website-default;
+}
+
 body {
     box-sizing: border-box;
-    padding: $padding-website-default;
     background-color: $color-background;
     position: relative;
     min-height: 300vh;
