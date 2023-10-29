@@ -1,88 +1,140 @@
-//header
+// //header
 
-.header{
-    min-height: 80vh;
+@use "abstracts" as var;
+
+.header {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  &__title {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
-    padding: $padding-website-default;
-
-    &__content{
-        display: flex;
-        justify-content: space-between;
-        gap: 4.8rem;
-    }
-    
-    &__link-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    flex-direction: column;
+    text-transform: uppercase;
+    line-height: 250%;
+    &--main {
+      font-size: 4.8rem;
+      text-shadow: 0.5rem 0.5rem 0px #000;
     }
 
-    &__link-list{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+    &--second {
+      font-size: 3.2rem;
+      text-shadow: 0.5rem 0.5rem 0px #000;
     }
+  }
 
-    &__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 100%;
-        gap: 5rem;
+  &__link-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 8.2rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: -4px;
+    &--link {
+      color: var.$color-primary;
     }
+  }
 
-    &__title{
-        line-height: 1;
-        text-transform: uppercase;
-        display: inline-block;
-        margin-bottom: 1rem;
+  &__text {
+    font-size: 2.4rem;
+    color: var.$color-text-grey;
+    line-height: 130%;
+  }
 
-        *{
-            display: block;
-        }
-
-        &--big{
-            font-size: 4.8rem;
-        }
-
-        &--small{
-            font-size: 3.2rem;
-        }
+  &__cta-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    * {
+      line-height: 130%;
     }
-
-    &__description{
-        font-size: 2.4rem;
-        line-height: 140%;
-        max-width: 600px;
-        color: $color-text-grey;
-        // margin-bottom: 1.6rem;
-    }
-
-    &__link{
-        transition: all 0.3s;
-        &--heading{
-            color: $color-primary;
-            font-size: 10rem;
-            line-height: 67%;
-
-            
-        }
-    }
-
-    &__cta-box{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.6rem;
-    }
+  }
 }
-// @media (max-width: 1100px){
-    
-// }
 
-// @media (max-width: 575px){
+// .header {
+//   min-height: 80vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 1.6rem;
+//   padding: $padding-website-default;
 
+//   &__content {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//     gap: 4.8rem;
+//   }
+
+//   &__link-box {
+//     display: flex;
+//   }
+
+//   &__link-list {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     margin-left: -4px;
+//   }
+
+//   &__text {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 100%;
+//   }
+
+//   &__title {
+//     line-height: 1;
+//     text-transform: uppercase;
+//     display: none;
+//     margin-bottom: 1rem;
+
+//     * {
+//       display: block;
+//     }
+
+//     &--big {
+//       font-size: 4.8rem;
+//     }
+
+//     &--small {
+//       font-size: 3.2rem;
+//     }
+//   }
+
+//   &__description {
+//     font-size: 2.4rem;
+//     line-height: 140%;
+//     max-width: 600px;
+//     color: $color-text-grey;
+//     // margin-bottom: 1.6rem;
+//   }
+
+//   &__link {
+//     transition: all 0.3s;
+//     &--heading {
+//       color: $color-primary;
+//       font-size: 10rem;
+//       line-height: 90%;
+//     }
+//   }
+
+//   &__cta-box {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 1.6rem;
+//   }
 // }
+// // @media (max-width: 1100px){
+
+// // }
+
+// // @media (max-width: 575px){
+
+// // }

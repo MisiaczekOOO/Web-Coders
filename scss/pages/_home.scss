@@ -1,58 +1,57 @@
 //sections
 
-.section-about{
-    background-color: rgba(0, 0, 0, 0.50);
-    border-radius: 1.6rem;
+.section-about {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $padding-website-default;
+  &__heading {
+    font-size: 6.4rem;
+    margin-bottom: 4.8rem;
+  }
+}
+
+.section-courses {
+  &__content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: $padding-website-default;
-    &__heading{
-        font-size: 6.4rem;
-        margin-bottom: 4.8rem;
+  }
+
+  &__desc {
+    max-width: 700px;
+    &--heading {
+      font-size: 6.4rem;
+      line-height: 100%;
+      margin-bottom: 1.6rem;
     }
+
+    &--text {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__card-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+  }
 }
 
-.section-courses{
-    &__content{
-        display: flex;
-    }
+.section-payments {
+  &__heading {
+    font-size: 4.8rem;
+  }
 
-    &__desc{
-        max-width: 700px;
-        &--heading{
-            font-size: 6.4rem;
-            line-height: 100%;
-            margin-bottom: 1.6rem;
-        }
-
-        &--text{
-            font-size: 2.4rem
-        }
-
-    }
-
-    &__image{
-        img{
-            max-width: 100%;
-        }
-    }
-
-    &__card-box{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 3.2rem;
-    }
-}
-
-.section-payments{
-    &__heading{
-        font-size: 4.8rem;
-    }
-
-    &__card-box{
-        display: flex;
-        justify-content: space-around;
-    }
+  &__card-box {
+    display: flex;
+    justify-content: space-around;
+  }
 }

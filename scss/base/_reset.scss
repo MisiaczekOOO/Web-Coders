@@ -1,0 +1,61 @@
+//global resets etc.
+
+@use "abstracts" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+main,
+nav,
+footer,
+header {
+  padding-inline: $padding-website-default;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-background;
+  position: relative;
+  min-height: 300vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+//variables like from frameworks
+
+.u--addon {
+  font-weight: normal;
+  transition: all 0.5s;
+}
+
+.u-textshadow {
+  text-shadow: 5px 5px 0px rgb(0, 0, 0);
+}
+
+.u-buttonshadow {
+  transition: all 0.1s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 0px 0px #000000b7;
+    filter: brightness(110%);
+  }
+
+  &:active,
+  &:focus {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 0px 0px #000000b7;
+  }
+}

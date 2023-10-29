@@ -1,0 +1,560 @@
+<!-- <!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__link-box">
+          <h1 class="header__title">
+            <span class="header__title--big u-textshadow">Kursy</span>
+            <span class="header__title--small u-textshadow">Programowania</span>
+          </h1>
+          <div class="header__link-list">
+            <a href="#" class="header__link">
+              <h2 class="header__link--heading">Frontend</h2>
+            </a>
+            <a href="#" class="header__link">
+              <h2 class="header__link--heading">Backend</h2>
+            </a>
+            <a href="#" class="header__link">
+              <h2 class="header__link--heading">Fullstack</h2>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__text">
+          <p class="header__description">
+            Lorem ipsum dolor sit ametconsectetur. Consectetur facilisi senectus
+            vestibulum netus etauctor.
+          </p>
+          <div class="header__cta-box">
+            <a href="#" class="btn btn--about u-buttonshadow"> O szkole </a>
+            <a href="#" class="btn btn--courses u-buttonshadow">
+              Wszystkie Kursy
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav__logo">
+          <img
+            class="nav__logo--image"
+            src="assets/images/logo.png"
+            alt="logo szkoła programowania web-coders"
+          />
+          <h2 class="nav__logo--title">Web-Coders</h2>
+        </div>
+        <div class="nav__ul">
+          <a href="#" class="nav__ul--item">O szkole</a>
+          <a href="#" class="nav__ul--item">Kursy</a>
+          <a href="#" class="nav__ul--item">Wychowawcy</a>
+        </div>
+        <div class="nav__cta">
+          <a href="#" class="nav__cta--item nav__cta--references">Referencje</a>
+          <a href="#" class="btn btn--contact nav__cta--item u-buttonshadow"
+            >Kontakt</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <h2 class="section-about__heading">O szkole Web Coders</h2>
+
+        <div class="about-grid">
+          <div class="about-grid__content">
+            <h3 class="about-grid__content--heading">Dla kogo?</h3>
+            <p class="about-grid__content--text">
+              Nasze kursy programowania są dostępne dla wszystkich, bez względu
+              na przygotowanie zawodowe. Zajęcia są intensywne, ale w przyjaznej
+              atmosferze, co ułatwia naukę. Wymagane są jedynie dobre
+              umiejętności komputerowe, podstawowa znajomość angielskiego ,
+              zdolność logicznego myślenia i podstawowa wiedza matematyczna.
+            </p>
+          </div>
+
+          <div class="about-grid__img">
+            <img src="/images/logo.png" alt="" />
+          </div>
+
+          <div class="about-grid__img">
+            <img src="/images/logo.png" alt="" />
+          </div>
+
+          <div class="about-grid__content">
+            <h3 class="about-grid__content--heading">Metody naucznia</h3>
+            <p class="about-grid__content--text">
+              Kursy programowania to intensywne warsztaty praktyczne,
+              skoncentrowane na niezbędnych umiejętnościach. Uczymy Cię
+              kodowania od pierwszego dnia, minimalizując teorię do niezbędnego
+              minimum. Nasi instruktorzy to wykwalifikowani programiści z
+              pedagogicznym przygotowaniem.
+            </p>
+          </div>
+
+          <div class="about-grid__content">
+            <h3 class="about-grid__content--heading">
+              Tryby oraz czas twania nauki
+            </h3>
+            <p class="about-grid__content--text">
+              Nasi mentorzy opracowali pełen program nauki, dostosowany do
+              dogodnego harmonogramu. Nasze kursy programowania są elastyczne i
+              oferowane w trybie zaocznym lub wieczorowym. Tryb zaoczny kursu
+              modułowego obejmuje 10 zjazdów w wybrane weekendy, zwykle co dwa
+              tygodnie, aby umożliwić systematyczne przyswajanie wiedzy.
+              Szczegółowe informacje o ilości godzin dydaktycznych znajdziesz w
+              sekcji "Kursy programowania".
+            </p>
+          </div>
+
+          <div class="about-grid__img">
+            <img src="/assets/images/logo.png" alt="" />
+          </div>
+          <div class="about-grid__img">
+            <img src="/images/logo.png" alt="" />
+          </div>
+
+          <div class="about-grid__content">
+            <h3 class="about-grid__content--heading">Koszty</h3>
+            <p class="about-grid__content--text">
+              Oferujemy płatność w ratach. Harmonogram płatności będzie
+              dołączony do umowy. Jeśli szukasz dofinansowania lub zwrotu części
+              kosztów szkolenia, współpracujemy z różnymi instytucjami, które
+              mogą zapewnić zwrot nawet do 25% kosztów. Jeśli jesteś osobą
+              bezrobotną, istnieje również możliwość ubiegania się o pełne
+              sfinansowanie szkolenia przez Urząd Pracy. Szczegółowe informacje
+              znajdziesz u nas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-courses">
+        <div class="section-courses__content">
+          <div class="section-courses__desc">
+            <h2 class="section-courses__desc--heading">Nasze szkolenia</h2>
+
+            <p class="section-courses__desc--text">
+              Poniżej znajdziesz nasze kursy programowania. Wybór odpowiedniego
+              zależy od Twojej obecnej wiedzy i celów. Chętnie doradzimy Ci w
+              wyborze i odpowiemy na wszelkie pytania. Przed podjęciem decyzji
+              warto zapoznać się z naszym artykułem, który wyjaśnia różnice
+              między Front-End Developerem, Back-End Developerem oraz Full-Stack
+              Developerem. Oferujemy także opcję indywidualnych konsultacji.
+              Jeśli jesteś nimi zainteresowany, prosimy o kontakt, aby omówić
+              szczegóły.
+            </p>
+          </div>
+
+          <div class="section-courses__image">
+            <img src="/images/logo.png" alt="" />
+          </div>
+        </div>
+
+        <div class="section-courses__card-box">
+          <div class="course-card">
+            <p class="course-card--skill-level">Polecany dla początkujących</p>
+            <h2 class="course-card--course-name">Full-Stack Developer</h2>
+            <div class="course-card__info-box">
+              <div class="course-card__info">
+                <img
+                  src="assets/images/calendar-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">30.09.2023r</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="/assets/images/clock-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">240h</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="assets/images/pin-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">Online / Indywidualnie</p>
+              </div>
+            </div>
+            <p class="course-card--list-title">Zagadnienia</p>
+            <ul class="course-card__list">
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+            </ul>
+            <div class="course-card__price">
+              <p class="course-card__price--old">5.999 PLN</p>
+              <p class="course-card__price--new">5.199 PLN</p>
+            </div>
+            <p class="course-card__instalment">
+              Możliwość rozłożenia na raty 0%
+            </p>
+            <a href="#" class="btn btn--more u-buttonshadow"
+              >Zapytaj o szczegóły</a
+            >
+          </div>
+
+          <div class="course-card">
+            <p class="course-card--skill-level">Polecany dla początkujących</p>
+            <h2 class="course-card--course-name">Full-Stack Developer</h2>
+            <div class="course-card__info-box">
+              <div class="course-card__info">
+                <img
+                  src="assets/images/calendar-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">30.09.2023r</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="/assets/images/clock-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">240h</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="assets/images/pin-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">Online / Indywidualnie</p>
+              </div>
+            </div>
+            <p class="course-card--list-title">Zagadnienia</p>
+            <ul class="course-card__list">
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+            </ul>
+            <div class="course-card__price">
+              <p class="course-card__price--old">5.999 PLN</p>
+              <p class="course-card__price--new">5.199 PLN</p>
+            </div>
+            <p class="course-card__instalment">
+              Możliwość rozłożenia na raty 0%
+            </p>
+            <a href="#" class="btn btn--more u-buttonshadow"
+              >Zapytaj o szczegóły</a
+            >
+          </div>
+
+          <div class="course-card">
+            <p class="course-card--skill-level">Polecany dla początkujących</p>
+            <h2 class="course-card--course-name">Full-Stack Developer</h2>
+            <div class="course-card__info-box">
+              <div class="course-card__info">
+                <img
+                  src="assets/images/calendar-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">30.09.2023r</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="/assets/images/clock-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">240h</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="assets/images/pin-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">Online / Indywidualnie</p>
+              </div>
+            </div>
+            <p class="course-card--list-title">Zagadnienia</p>
+            <ul class="course-card__list">
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+            </ul>
+            <div class="course-card__price">
+              <p class="course-card__price--old">5.999 PLN</p>
+              <p class="course-card__price--new">5.199 PLN</p>
+            </div>
+            <p class="course-card__instalment">
+              Możliwość rozłożenia na raty 0%
+            </p>
+            <a href="#" class="btn btn--more u-buttonshadow"
+              >Zapytaj o szczegóły</a
+            >
+          </div>
+
+          <div class="course-card">
+            <p class="course-card--skill-level">Polecany dla początkujących</p>
+            <h2 class="course-card--course-name">Full-Stack Developer</h2>
+            <div class="course-card__info-box">
+              <div class="course-card__info">
+                <img
+                  src="assets/images/calendar-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">30.09.2023r</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="/assets/images/clock-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">240h</p>
+              </div>
+              <div class="course-card__info">
+                <img
+                  src="assets/images/pin-icon.svg"
+                  alt=""
+                  class="course-card__info--icon"
+                />
+                <p class="course-card__info--text">Online / Indywidualnie</p>
+              </div>
+            </div>
+            <p class="course-card--list-title">Zagadnienia</p>
+            <ul class="course-card__list">
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+              <li class="course-card__list--item">html</li>
+            </ul>
+            <div class="course-card__price">
+              <p class="course-card__price--old">5.999 PLN</p>
+              <p class="course-card__price--new">5.199 PLN</p>
+            </div>
+            <p class="course-card__instalment">
+              Możliwość rozłożenia na raty 0%
+            </p>
+            <a href="#" class="btn btn--more u-buttonshadow"
+              >Zapytaj o szczegóły</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-payments">
+        <h2 class="section-payments__heading">Jak można sfinansować kurs?</h2>
+
+        <div class="section-payments__card-box">
+          <div class="payments-card">
+            <img
+              src="/assets/images/wallet-icon.svg"
+              alt="ikona opcji sfinansowania kursu przez środki własne"
+              class="payments-card--image"
+            />
+
+            <h3 class="payments-card--heading">Środki własne</h3>
+
+            <p class="payments-card--description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+              ipsam! Voluptatibus accusamus inventore quo natus, cumque et cum
+              quaerat consectetur dicta asperiores aperiam quae architecto
+              delectus culpa, ex sed. Nostrum quidem quod molestias deleniti
+              necessitatibus fugiat voluptas doloremque aliquid libero!
+            </p>
+          </div>
+          <div class="payments-card">
+            <img
+              src="/assets/images/raty-icon.svg"
+              alt="f"
+              class="payments-card--image"
+            />
+
+            <h3 class="payments-card--heading">Na raty 0%</h3>
+
+            <p class="payments-card--description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+              ipsam! Voluptatibus accusamus inventore quo natus, cumque et cum
+              quaerat consectetur dicta asperiores aperiam quae architecto
+              delectus culpa, ex sed. Nostrum quidem quod molestias deleniti
+              necessitatibus fugiat voluptas doloremque aliquid libero!
+            </p>
+          </div>
+          <div class="payments-card">
+            <img
+              src="/assets/images/bailouts-icon.svg"
+              alt="f"
+              class="payments-card--image"
+            />
+
+            <h3 class="payments-card--heading">Z dofinansowaniem</h3>
+
+            <p class="payments-card--description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+              ipsam! Voluptatibus accusamus inventore quo natus, cumque et cum
+              quaerat consectetur dicta asperiores aperiam quae architecto
+              delectus culpa, ex sed. Nostrum quidem quod molestias deleniti
+              necessitatibus fugiat voluptas doloremque aliquid libero!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-numbers">
+        <h2 class="section-numbers__heading">Web-Coders w liczbach</h2>
+
+        <div class="section-numbers__numbers-box">
+          <div class="section-numbers__number-card">
+            <h3 class="section-numbers__number-card--stat"></h3>
+            <p class="section-numbers__number-card--description"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-mentors">
+        <h2 class="section-mentors__heading">Mentorzy / Wykładowcy</h2>
+
+        <div class="section-mentors__content">
+          <p class="section-mentors__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sed
+            doloremque corrupti nostrum dicta voluptatem accusamus? Accusantium
+            cumque tenetur perferendis.
+          </p>
+
+          <div class="section-mentors__person-card-box">
+            <div class="section-mentors__person-card">
+              <img
+                src="#"
+                alt=""
+                class="section-mentors__person-card--avatar"
+              />
+              <div class="section-mentors__personal-box">
+                <p class="section-mentors__personal-box--name">
+                  Damian Cangaris
+                </p>
+
+                <p class="section-mentors__personal-box--description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="section-mentors__personal-box__languages">
+                  <img
+                    src="#"
+                    alt=""
+                    class="section-mentors__personal-box__languages--item"
+                  />
+                  <img
+                    src="#"
+                    alt=""
+                    class="section-mentors__personal-box__languages--item"
+                  />
+                  <img
+                    src="#"
+                    alt=""
+                    class="section-mentors__personal-box__languages--item"
+                  />
+                  <img
+                    src="#"
+                    alt=""
+                    class="section-mentors__personal-box__languages--item"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="section-testimonials__card-bar"></div>
+
+        <h2 class="section-testimonials__heading">Co mówią o nas inni</h2>
+
+        <div class="section-testimonials__card-bar"></div>
+      </section>
+
+      <section class="section-contact"></section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Coders</title>
+    <link rel="stylesheet" href="/main.77bb5cfd.css">
+  <script src="/main.77bb5cfd.js"></script></head>
+  <body>
+    <header class="header">
+      <div class="header__links">
+        <h2 class="header__title">
+          <span class="header__title--main">Kursy</span>
+          <span class="header__title--second">Programowania</span>
+        </h2>
+        <div class="header__link-box">
+          <a href="#" class="header__link-box--link"> Frontend </a>
+          <a href="#" class="header__link-box--link"> Frontend </a>
+          <a href="#" class="header__link-box--link"> Frontend </a>
+        </div>
+      </div>
+      <div class="header__content">
+        <p class="header__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          nesciunt doloribus vel accusamus tenetur doloremque?
+        </p>
+        <div class="header__cta-box">
+          <a href="#" class="btn btn--cta-about">O szkole</a>
+          <a href="#" class="btn btn--cta-courses">Wszystkie kursy</a>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="#" alt="logo" class="header__logo--image">
+          <h2 class="header__logo--name">Web-Coders</h2>
+        </div>
+        <div class="nav__links">
+          <a href="#" class="nav--item"> O szkole </a>
+          <a href="#" class="nav--item"> Kursy </a>
+          <a href="#" class="nav--item"> Wykładowcy </a>
+        </div>
+        <div class="nav__contact-box">
+          <a href="#" class="header__contact-box--references">Referencje</a>
+          <a href="#" class="header__contact-box--contact">Kontakt</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node-sass scss/main.scss css/style.css -w"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^9.0.0",
-    "sass": "^1.69.3"
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.69.5"
   }
 }
