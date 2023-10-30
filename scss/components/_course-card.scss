@@ -1,82 +1,83 @@
-// .course-card{
-//     background-color: $color-background-light;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     padding: 2.4rem;
-//     box-shadow: -12px -12px 0px 0px rgba(0, 0, 0, 0.40);
+@use "abstracts" as *;
 
-//     &--skill-level{
-//         text-align: center;
-//         color: $color-text-grey;
-//         font-size: 1.4rem;
-//         font-style: italic;
+.course {
+  background-color: $color-background-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.4rem;
+  box-shadow: -12px -12px 0px 0px rgba(0, 0, 0, 0.4);
+  gap: 1.6rem;
+  max-width: 50rem;
 
-//     }
+  &__level {
+    text-align: center;
+    color: $color-text-grey;
+    font-size: 1.4rem;
+    font-style: italic;
+  }
 
-//     &--course-name{
-//         font-size: 3.2rem;
-//         text-align: center;
-//         font-weight: 900;
-//         line-height: 100%;
-//     }
+  &__name {
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 100%;
+  }
 
-//     &__info-box{
-//         display: flex;
-//         margin-block: 1.6rem;
-//         justify-content: space-between;
-//     }
+  &__info-box {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
 
-//     &__info{
-//         display: flex;
-//         justify-content: center;
-//         gap: 0.4rem;
-//         font-size: 1.6rem;
+    &--icon {
+      color: $color-primary;
+      font-size: 2.4rem;
+    }
 
-//         &--icon{
-//             max-width: 1em;
-//         }
-//     }
+    &--info {
+      font-size: 2.4rem;
+    }
+  }
 
-//     &--list-title{
-//         font-size: 2.4rem;
-//         font-weight: 900;
-//         line-height: 100%;
-//         margin-bottom: 0.8rem;
-//     }
+  &__list-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 100%;
+    margin-bottom: 0.8rem;
+  }
 
-//     &__list{
-//         padding-left: 1.6rem;
-//         margin-bottom: 1.2rem;
+  &__list {
+    padding-left: 1.6rem;
+    margin-bottom: 1.2rem;
 
-//         &--item{
-//             color: $color-text-grey;
-//             font-size: 1.6rem;
-//         }
-//     }
+    &--item {
+      color: $color-text-grey;
+      font-size: 1.6rem;
+    }
+  }
 
-//     &__price{
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 1rem;
-//         font-weight: 900;
-//         line-height: 1;
-//         &--old{
-//             font-size: 1.6rem;
-//             text-decoration: line-through;
-//             color: $color-text-grey;
-//         }
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 900;
+    line-height: 1;
+    &--old {
+      font-size: 1.6rem;
+      text-decoration: line-through;
+      color: $color-text-grey;
+    }
 
-//         &--new{
-//             font-size: 3.6rem;
-//         }
-//     }
+    &--new {
+      font-size: 3.6rem;
+    }
+  }
 
-//     &__instalment{
-//         font-size: 1.4rem;
-//         color: $color-text-grey;
-//         text-align: center;
-//         margin-bottom: 1.6rem;
-//     }
-// }
+  &__instalment {
+    font-size: 1.4rem;
+    color: $color-text-grey;
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+}

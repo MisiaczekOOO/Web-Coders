@@ -25,6 +25,13 @@
     }
   }
 
+  &__content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
   &__link-box {
     display: flex;
     flex-direction: column;

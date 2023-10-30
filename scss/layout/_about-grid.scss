@@ -1,3 +1,5 @@
+@use "abstracts" as *;
+
 // .about-grid{
 //     display: grid;
 //     grid-template-columns: repeat(auto-fit, minmax(0, #{"min(100%, max(400px, 100%/2))"}));
@@ -29,3 +31,23 @@
 
 //     }
 // }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  gap: 1.6rem;
+
+  &__item {
+    height: 20rem;
+
+    &--title {
+      color: $color-primary;
+      font-size: 3.2rem;
+    }
+
+    &--text {
+      color: $color-text-grey;
+      font-size: 1.6rem;
+    }
+  }
+}
