@@ -1,13 +1,17 @@
 // //navigation
 
+@use "abstracts" as *;
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(2px);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  padding-block: 1.6rem;
 
   &__logo,
   &__links,
@@ -20,9 +24,20 @@
 
   &__links {
     justify-content: center;
+
+    &--item {
+      color: $color-white;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
   }
 
   &__contact-box {
     justify-content: flex-end;
+    font-size: 1.6rem;
+
+    &--references {
+      color: $color-white;
+    }
   }
 }
