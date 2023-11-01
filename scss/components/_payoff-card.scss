@@ -1,0 +1,25 @@
+@use "abstracts/variables" as *;
+
+.payoff__card {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+
+  &--icon {
+    align-self: center;
+    font-size: 6.4rem;
+    color: $color-primary;
+  }
+
+  &--main {
+    font-size: 2.4rem;
+    align-self: center;
+    margin-block: 2.4rem 0.8rem;
+  }
+
+  &--text {
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: $color-text-grey;
+  }
+}

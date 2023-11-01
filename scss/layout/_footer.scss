@@ -1,0 +1,65 @@
+@use "abstracts/variables" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 4.8rem;
+  padding: $padding-website-default/2 $padding-website-default;
+  background-color: $color-background-dark;
+
+  &__break-line {
+    width: 100%;
+    height: 3px;
+    background-color: $color-white;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__menu-list {
+    list-style: none;
+
+    &--item {
+      color: $color-white;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__contact {
+    list-style: none;
+  }
+
+  &__home-link {
+    display: flex;
+    gap: 0.8rem;
+    color: $color-white;
+    align-items: center;
+    font-size: 1.6rem;
+    text-decoration: underline;
+  }
+
+  &__contact-item {
+    display: flex;
+    gap: 0.8rem;
+    color: $color-white;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  &__social-box {
+    display: flex;
+    gap: 1.6rem;
+    &--item {
+      font-size: 4.8rem;
+      color: $color-white;
+    }
+  }
+
+  &__credits {
+    font-size: 1.6rem;
+  }
+}

@@ -42,6 +42,12 @@
     margin-left: -4px;
     &--link {
       color: var.$color-primary;
+      text-shadow: 0.5rem 0.5rem 0px #000;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateX(0.8rem);
+        filter: brightness(120%);
+      }
     }
   }
 
