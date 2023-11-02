@@ -1,4 +1,4 @@
-@use "abstracts/variables" as *;
+@use "../abstracts/variables" as *;
 
 .footer {
   display: flex;
@@ -90,7 +90,9 @@
     &__menu-list {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       margin-block: 2.4rem;
+      gap: 2.4rem;
     }
 
     &__content {
@@ -99,7 +101,7 @@
     }
     &__social-box {
       justify-content: center;
-      gap: 6.4rem;
+      gap: 2.4rem;
     }
 
     &__contact {

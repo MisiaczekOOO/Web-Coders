@@ -1,5 +1,5 @@
 //sections
-@use "abstracts/variables" as *;
+@use "../abstracts/variables" as *;
 
 @mixin title-style {
   font-size: 4.8rem;
@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 4.8rem;
-  min-height: 80vh;
+  min-height: 90vh;
   padding: $padding-website-default;
 
   &__title {
@@ -100,8 +100,8 @@
 }
 
 .contact-section {
-  min-height: 70vh;
-  padding: 0 $padding-website-default;
+  min-height: 80vh;
+  padding: $padding-website-default;
 
   &__title {
     @include title-style();
@@ -149,6 +149,9 @@
 
 @media only screen and (max-width: 640px) {
   .mentors-section {
+    &__title {
+      font-size: 3.2rem;
+    }
     &__content {
       flex-direction: column;
     }
@@ -158,6 +161,12 @@
       font-size: 3.2rem;
       color: $color-text-grey;
       line-height: 135%;
+    }
+  }
+
+  .payoff-section {
+    &__title {
+      font-size: 3.2rem;
     }
   }
 

@@ -1,5 +1,5 @@
 //global resets etc.
-@use "abstracts/variables" as *;
+@use "../abstracts/variables" as *;
 
 *,
 *::after,
@@ -11,7 +11,9 @@
 
 html {
   // This defines what 1rem is
-  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  //1 rem = 10px; 10px/16px = 62.5%
 }
 
 nav,
@@ -31,4 +33,8 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.body-lock {
+  overflow: hidden !important;
 }

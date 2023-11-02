@@ -1,4 +1,4 @@
-@use "abstracts/variables" as *;
+@use "../abstracts/variables" as *;
 
 .payoff__card {
   max-width: 30rem;
@@ -7,7 +7,7 @@
 
   &--icon {
     align-self: center;
-    font-size: 6.4rem;
+    font-size: 10.2rem;
     color: $color-primary;
   }
 
@@ -18,7 +18,7 @@
   }
 
   &--text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 160%;
     color: $color-text-grey;
   }
