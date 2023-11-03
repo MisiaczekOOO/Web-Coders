@@ -5,13 +5,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding-block: 1.6rem;
-
+  animation: appear-up 1s forwards 1.5s;
+  animation-fill-mode: backwards;
   &__logo,
   &__links,
   &__contact-box {

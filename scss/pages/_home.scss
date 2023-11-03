@@ -17,6 +17,8 @@
   gap: 3.2rem;
   &__title {
     @include title-style();
+    animation: appear-up 1s forwards 2s;
+    animation-fill-mode: backwards;
   }
 }
 
