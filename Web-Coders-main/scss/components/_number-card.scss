@@ -1,0 +1,11 @@
+.number-card {
+  &--number {
+    font-size: 6.4rem;
+    font-weight: 900;
+    line-height: 110%;
+  }
+
+  &--description {
+    font-size: 2.4rem;
+  }
+}
