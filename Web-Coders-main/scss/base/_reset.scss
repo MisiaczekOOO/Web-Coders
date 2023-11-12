@@ -1,0 +1,40 @@
+//global resets etc.
+@use "../abstracts/variables" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  //1 rem = 10px; 10px/16px = 62.5%
+}
+
+nav,
+footer,
+header {
+  padding-inline: $padding-website-default;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-background;
+  position: relative;
+  min-height: 300vh;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body-lock {
+  overflow: hidden !important;
+}

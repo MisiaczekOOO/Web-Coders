@@ -1,0 +1,182 @@
+//sections
+@use "../abstracts/variables" as *;
+
+@mixin title-style {
+  font-size: 4.8rem;
+  font-weight: 900;
+  margin-bottom: 3.2rem;
+  line-height: 120%;
+}
+
+.about-section {
+  // background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 $padding-website-default;
+  gap: 3.2rem;
+  &__title {
+    @include title-style();
+    animation: appear-up 1s forwards 2s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.courses-section {
+  padding-inline: $padding-website-default;
+
+  &__title {
+    @include title-style();
+  }
+
+  &__text {
+    max-width: 700px;
+    font-size: 2.4rem;
+    color: $color-text-grey;
+    margin-bottom: 6.4rem;
+  }
+}
+
+.payoff-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4.8rem;
+  min-height: 90vh;
+  padding: $padding-website-default;
+
+  &__title {
+    text-align: center;
+    @include title-style();
+  }
+
+  &__card-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4.8rem;
+    width: 100%;
+  }
+}
+
+.numbers-section {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  width: 100%;
+  background-color: $color-primary;
+  padding-block: 9.8rem;
+  justify-content: center;
+  &__title {
+    @include title-style();
+    padding-inline: $padding-website-default;
+  }
+}
+
+.mentors-section {
+  padding: $padding-website-default * 2 $padding-website-default;
+  &__title {
+    @include title-style();
+  }
+
+  &__content {
+    display: flex;
+    gap: 4.8rem;
+  }
+
+  &__text {
+    width: 80%;
+    font-size: 2.4rem;
+    color: $color-text-grey;
+    line-height: 135%;
+  }
+
+  &__mentors-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4.8rem;
+    width: 100%;
+  }
+}
+
+.contact-section {
+  min-height: 80vh;
+  padding: $padding-website-default;
+
+  &__title {
+    @include title-style();
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    gap: 3.2rem;
+    justify-content: space-around;
+
+    &__map-box {
+      &--map {
+        border-radius: 2.4rem;
+        outline: 0.5rem solid $color-primary;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .contact-section {
+    &__title {
+      text-align: center;
+    }
+    &__content {
+      flex-direction: column;
+    }
+
+    &__map-box {
+      display: flex;
+      justify-content: center;
+      &--map {
+        width: 70%;
+      }
+    }
+  }
+
+  .form-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .mentors-section {
+    &__title {
+      font-size: 3.2rem;
+    }
+    &__content {
+      flex-direction: column;
+    }
+
+    &__text {
+      width: 100%;
+      font-size: 3.2rem;
+      color: $color-text-grey;
+      line-height: 135%;
+    }
+  }
+
+  .payoff-section {
+    &__title {
+      font-size: 3.2rem;
+    }
+  }
+
+  .contact-section {
+    &__map-box {
+      &--map {
+        width: 100%;
+      }
+    }
+  }
+}
