@@ -1,123 +1,135 @@
-@use "../abstracts/variables" as *;
+@use "../abstracts" as *;
 
 .course {
-  background-color: $color-background-light;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4.8rem 1.6rem 1.6rem;
-  box-shadow: -1.2rem -1.2rem 0px 0px rgba(0, 0, 0, 0.4);
-  max-width: 40rem;
-  transition: box-shadow 0.5s;
-
-  &:hover {
-    box-shadow: -1.2rem -1.2rem 0px 0px $color-primary;
-  }
-
-  &__level {
-    text-align: center;
-    color: $color-text-grey;
-    font-size: 1.4rem;
-    font-style: italic;
-  }
-
-  &__name {
-    font-size: 3.2rem;
-    text-align: center;
-    font-weight: 900;
-    line-height: 100%;
-  }
-
-  &__info-box {
+    background-color: $color-background-light;
     display: flex;
-    gap: 0.8rem;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    margin-block: 2.4rem;
-    flex-wrap: wrap;
+    padding: 4.8rem 1.6rem 1.6rem;
+    box-shadow: -1.2rem -1.2rem 0px 0px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.5s;
+    grid-column: span 12;
 
-    &--icon {
-      color: $color-primary;
-      font-size: 1.6rem;
-      transition: all 0.5s;
-    }
-
-    &--info {
-      font-size: 1.3rem;
-      line-height: 100%;
-      transition: all 0.5s;
-    }
-  }
-
-  &__info-block {
-    display: flex;
-    align-items: center;
-    border: 0.2rem solid white;
-    gap: 0.8rem;
-    padding: 0.8rem;
-    border-radius: 1.6rem;
-    transition: all 0.5s;
     &:hover {
-      background-color: $color-primary;
-      cursor: pointer;
-      .course__info-box {
+        box-shadow: -1.2rem -1.2rem 0px 0px $color-primary;
+    }
+
+    &__level {
+        text-align: center;
+        color: $color-text-grey;
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+
+    &__name {
+        font-size: 3.2rem;
+        text-align: center;
+        font-weight: 900;
+        line-height: 100%;
+    }
+
+    &__info-box {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-block: 2.4rem;
+        flex-wrap: wrap;
+
         &--icon {
-          color: $color-white;
-          font-size: 1.6rem;
+            color: $color-primary;
+            font-size: 1.6rem;
+            transition: all 0.5s;
         }
 
         &--info {
-          font-size: 1.3rem;
-          line-height: 100%;
+            font-size: 1.3rem;
+            line-height: 100%;
+            transition: all 0.5s;
         }
-      }
-    }
-  }
-
-  &__list-title {
-    font-size: 2.4rem;
-    font-weight: 900;
-    line-height: 100%;
-    margin-bottom: 0.8rem;
-  }
-
-  &__list {
-    padding-left: 2.4rem;
-    margin-bottom: 1.2rem;
-
-    &--item {
-      color: $color-text-grey;
-      font-size: 1.6rem;
-      font-weight: 900;
-    }
-  }
-
-  &__price-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 900;
-    line-height: 1;
-    margin-top: 2.4rem;
-    &--old {
-      font-size: 1.6rem;
-      text-decoration: line-through;
-      color: $color-text-grey;
-      font-weight: 700;
-      letter-spacing: 1px;
     }
 
-    &--new {
-      font-size: 3.6rem;
-    }
-  }
+    &__info-block {
+        display: flex;
+        align-items: center;
+        border: 0.2rem solid white;
+        gap: 0.8rem;
+        padding: 0.8rem;
+        border-radius: 1.6rem;
+        transition: all 0.5s;
+        &:hover {
+            background-color: $color-primary;
+            cursor: pointer;
+            .course__info-box {
+                &--icon {
+                    color: $color-white;
+                    font-size: 1.6rem;
+                }
 
-  &__instalment {
-    font-size: 1.4rem;
-    color: $color-text-grey;
-    text-align: center;
-    margin-bottom: 1.6rem;
-  }
+                &--info {
+                    font-size: 1.3rem;
+                    line-height: 100%;
+                }
+            }
+        }
+    }
+
+    &__list-title {
+        font-size: 2.4rem;
+        font-weight: 900;
+        line-height: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+    &__list {
+        padding-left: 2.4rem;
+        margin-bottom: 1.2rem;
+
+        &--item {
+            color: $color-text-grey;
+            font-size: 1.6rem;
+            font-weight: 900;
+        }
+    }
+
+    &__price-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-weight: 900;
+        line-height: 1;
+        margin-top: 2.4rem;
+        &--old {
+            font-size: 1.6rem;
+            text-decoration: line-through;
+            color: $color-text-grey;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        &--new {
+            font-size: 3.6rem;
+        }
+    }
+
+    &__instalment {
+        font-size: 1.4rem;
+        color: $color-text-grey;
+        text-align: center;
+        margin-bottom: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: $bp-sm) {
+    .course {
+        grid-column: span 6;
+    }
+}
+
+@media only screen and (min-width: $bp-xl) {
+    .course {
+        grid-column: span 4;
+    }
 }

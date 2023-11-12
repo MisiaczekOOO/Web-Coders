@@ -1,182 +1,164 @@
 //sections
-@use "../abstracts/variables" as *;
-
-@mixin title-style {
-  font-size: 4.8rem;
-  font-weight: 900;
-  margin-bottom: 3.2rem;
-  line-height: 120%;
-}
+@use "../abstracts" as *;
 
 .about-section {
-  // background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 $padding-website-default;
-  gap: 3.2rem;
-  &__title {
-    @include title-style();
-    animation: appear-up 1s forwards 2s;
-    animation-fill-mode: backwards;
-  }
+    @include grid-setup(2.4rem);
+    grid-template-columns: repeat(8, 1fr);
+    padding: 10vh 5%;
+
+    &__title {
+        @include title-style();
+
+        grid-column: span 8;
+        animation: appear-up 1s forwards 2s;
+        animation-fill-mode: backwards;
+        text-align: center;
+    }
+
+    &__item {
+        grid-column: span 8;
+        width: 100%;
+
+        &--title {
+            color: $color-primary;
+            font-size: 3.2rem;
+        }
+
+        &--text {
+            color: $color-text-grey;
+            font-size: 2.4rem;
+        }
+
+        &--image {
+            display: none;
+            img {
+                width: 50%;
+            }
+        }
+    }
 }
 
 .courses-section {
-  padding-inline: $padding-website-default;
+    @include grid-setup(2.4rem);
+    padding: 10vh 5%;
 
-  &__title {
-    @include title-style();
-  }
-
-  &__text {
-    max-width: 700px;
-    font-size: 2.4rem;
-    color: $color-text-grey;
-    margin-bottom: 6.4rem;
-  }
-}
-
-.payoff-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4.8rem;
-  min-height: 90vh;
-  padding: $padding-website-default;
-
-  &__title {
-    text-align: center;
-    @include title-style();
-  }
-
-  &__card-box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 4.8rem;
-    width: 100%;
-  }
-}
-
-.numbers-section {
-  display: flex;
-  gap: 2.4rem;
-  flex-direction: column;
-  width: 100%;
-  background-color: $color-primary;
-  padding-block: 9.8rem;
-  justify-content: center;
-  &__title {
-    @include title-style();
-    padding-inline: $padding-website-default;
-  }
-}
-
-.mentors-section {
-  padding: $padding-website-default * 2 $padding-website-default;
-  &__title {
-    @include title-style();
-  }
-
-  &__content {
-    display: flex;
-    gap: 4.8rem;
-  }
-
-  &__text {
-    width: 80%;
-    font-size: 2.4rem;
-    color: $color-text-grey;
-    line-height: 135%;
-  }
-
-  &__mentors-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 4.8rem;
-    width: 100%;
-  }
-}
-
-.contact-section {
-  min-height: 80vh;
-  padding: $padding-website-default;
-
-  &__title {
-    @include title-style();
-  }
-
-  &__content {
-    display: flex;
-    width: 100%;
-    gap: 3.2rem;
-    justify-content: space-around;
-
-    &__map-box {
-      &--map {
-        border-radius: 2.4rem;
-        outline: 0.5rem solid $color-primary;
-        padding: 1rem;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .contact-section {
     &__title {
-      text-align: center;
-    }
-    &__content {
-      flex-direction: column;
-    }
-
-    &__map-box {
-      display: flex;
-      justify-content: center;
-      &--map {
-        width: 70%;
-      }
-    }
-  }
-
-  .form-box {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .mentors-section {
-    &__title {
-      font-size: 3.2rem;
-    }
-    &__content {
-      flex-direction: column;
+        @include title-style();
+        grid-column: span 12;
+        text-align: center;
     }
 
     &__text {
-      width: 100%;
-      font-size: 3.2rem;
-      color: $color-text-grey;
-      line-height: 135%;
+        font-size: 2.4rem;
+        color: $color-text-grey;
+        grid-column: span 12;
     }
-  }
+}
 
-  .payoff-section {
+.payoff-section {
+    @include grid-setup(2.4rem);
+    row-gap: 4.8rem;
+    padding: 0 5%;
+    padding-block: 10vh;
+    width: 100%;
     &__title {
-      font-size: 3.2rem;
+        @include title-style();
+        text-align: center;
+        grid-column: span 12;
     }
-  }
+}
 
-  .contact-section {
-    &__map-box {
-      &--map {
-        width: 100%;
-      }
+.numbers-section {
+    width: 100%;
+    background-color: $color-primary;
+
+    justify-content: center;
+    &__title {
+        padding-inline: $padding-website-default;
     }
-  }
+}
+
+.numbers-grid {
+    @include grid-setup(2.4rem);
+    padding: 10vh 5%;
+    &__title {
+        @include title-style();
+        grid-column: span 12;
+    }
+}
+
+.mentors-section {
+    padding: 10vh 5%;
+    @include grid-setup(2.4rem);
+    &__title {
+        @include title-style();
+        grid-column: span 12;
+    }
+
+    &__content {
+        display: flex;
+        gap: 4.8rem;
+    }
+
+    &__text {
+        grid-column: span 12;
+        grid-row: span 2;
+        font-size: 2.4rem;
+        color: $color-text-grey;
+        line-height: 135%;
+    }
+}
+
+.contact-section {
+    @include grid-setup(2.4rem);
+
+    padding: 10vh 5%;
+
+    &__title {
+        @include title-style();
+        grid-column: span 12;
+    }
+
+    &__map-box {
+        grid-column: span 12;
+
+        &--map {
+            margin-top: 0.5rem;
+            border-radius: 2.4rem;
+            outline: 0.5rem solid $color-primary;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-sm) {
+    .about-section {
+        &__item {
+            grid-column: span 4;
+
+            &--image {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-md) {
+    .contact-section {
+        &__map-box {
+            grid-column: span 6;
+        }
+    }
+}
+
+@media only screen and (min-width: $bp-lg) {
+    .mentors-section {
+        &__text {
+            grid-column: span 5;
+            grid-row: span 2;
+            font-size: 2.4rem;
+            color: $color-text-grey;
+            line-height: 135%;
+        }
+    }
 }
