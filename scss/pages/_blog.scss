@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.article-section {
+    @include grid-setup(2.4rem);
+    padding: 15vh $padding-website-default;
+    &__title {
+        font-size: 4.8rem;
+        grid-column: 2 / span 10;
+        font-weight: 900;
+        line-height: 120%;
+        text-align: center;
+        color: $color-primary;
+    }
+
+    &__description {
+        grid-column: 2 / span 10;
+
+        font-size: 2.4rem;
+        color: $color-text-grey;
+    }
+}
