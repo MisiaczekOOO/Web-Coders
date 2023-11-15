@@ -65,4 +65,11 @@
         font-size: 1.6rem;
         background-color: $color-primary;
     }
+
+    &--stop {
+        background-color: $color-primary;
+        grid-column: 4 / span 6;
+        display: flex;
+        gap: 1.6rem;
+    }
 }

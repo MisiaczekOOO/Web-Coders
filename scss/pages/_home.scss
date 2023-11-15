@@ -4,7 +4,6 @@
 .about-section {
     @include grid-setup(2.4rem);
     grid-template-columns: repeat(8, 1fr);
-    padding: 10vh 5%;
 
     &__title {
         @include title-style();
@@ -40,7 +39,6 @@
 
 .courses-section {
     @include grid-setup(2.4rem);
-    padding: 10vh 5%;
 
     &__title {
         @include title-style();
@@ -58,8 +56,7 @@
 .payoff-section {
     @include grid-setup(2.4rem);
     row-gap: 4.8rem;
-    padding: 0 5%;
-    padding-block: 10vh;
+
     width: 100%;
     &__title {
         @include title-style();
@@ -80,7 +77,6 @@
 
 .numbers-grid {
     @include grid-setup(2.4rem);
-    padding: 10vh 5%;
     &__title {
         @include title-style();
         grid-column: span 12;
@@ -88,7 +84,6 @@
 }
 
 .mentors-section {
-    padding: 10vh 5%;
     @include grid-setup(2.4rem);
     &__title {
         @include title-style();
@@ -112,8 +107,6 @@
 .contact-section {
     @include grid-setup(2.4rem);
 
-    padding: 10vh 5%;
-
     &__title {
         @include title-style();
         grid-column: span 12;
@@ -128,6 +121,67 @@
             outline: 0.5rem solid $color-primary;
             width: 100%;
         }
+    }
+}
+
+.references-section {
+    @include grid-setup(2.4rem);
+    margin: 10vh auto;
+    &__title {
+        @include title-style();
+        grid-column: span 12;
+        text-align: center;
+    }
+
+    &__holder {
+        display: inline-block;
+        overflow: hidden;
+        grid-column: span 12;
+        white-space: nowrap;
+        position: relative;
+        &:before,
+        &::after {
+            position: absolute;
+            top: 0;
+
+            height: 100%;
+            width: 20rem;
+            content: "";
+
+            z-index: 2;
+        }
+
+        &::before {
+            background: linear-gradient(
+                to left,
+                rgba(255, 255, 255, 0),
+                $color-background
+            );
+            left: 0;
+        }
+
+        &::after {
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0),
+                $color-background
+            );
+            right: 0;
+        }
+
+        &:hover .references-box {
+            animation-play-state: paused;
+        }
+    }
+
+    &__phone-stopper {
+        display: block;
+    }
+}
+
+.stop {
+    .references-box {
+        animation-play-state: paused;
     }
 }
 
@@ -147,6 +201,12 @@
     .contact-section {
         &__map-box {
             grid-column: span 6;
+        }
+    }
+
+    .references-section {
+        &__phone-stopper {
+            display: none;
         }
     }
 }

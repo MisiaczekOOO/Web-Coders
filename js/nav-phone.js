@@ -33,7 +33,7 @@ const close = () => {
 
 //bug fix when changing resolution with opened navbar
 window.addEventListener("resize", () => {
-    if (window.innerWidth >= 640) {
+    if (window.innerWidth >= 768) {
         navbar.classList.remove("navbar-phone")
         const links = [...navbarList.getElementsByTagName("a")]
 

@@ -18,7 +18,9 @@
     margin: 0 auto;
     padding: 1.6rem 2.5% 0;
 
-    &__seo{
+    z-index: 3;
+
+    &__seo {
         display: none;
     }
 
