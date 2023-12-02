@@ -9,8 +9,7 @@
         @include title-style();
 
         grid-column: span 8;
-        animation: appear-up 1s forwards 2s;
-        animation-fill-mode: backwards;
+        animation: appear-up 1s backwards 2s;
         text-align: center;
     }
 

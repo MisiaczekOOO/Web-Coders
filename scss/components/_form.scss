@@ -5,6 +5,7 @@
 
     &__name-box {
         display: flex;
+        flex-direction: column;
         gap: 0.8rem;
         &--name,
         &--email {
@@ -17,9 +18,14 @@
         margin-top: 0.8rem;
         resize: vertical;
     }
-}
-@media only screen and (min-width: $bp-md) {
-    .form {
+
+    @media only screen and (min-width: $bp-sm) {
+        &__name-box {
+            flex-direction: row;
+        }
+    }
+
+    @media only screen and (min-width: $bp-md) {
         grid-column: span 6;
     }
 }

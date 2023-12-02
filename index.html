@@ -1,677 +1,803 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kursy Programowania, Nauka Programowania</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="./js/nav-phone.js" defer></script>
+        <script src="./js/references.js" defer></script>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kursy Programowania, Nauka Programowania</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <script src="./js/nav-phone.js" defer></script>
-  <script src="./js/references.js" defer></script>
-</head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">
+                Kursy
+                <span class="header__title--extra"> Programowania </span>
+            </h1>
+            <div class="header__link-box">
+                <a href="#" class="header__link-box--link">Frontend</a>
+                <a href="#" class="header__link-box--link">Backend</a>
+                <a href="#" class="header__link-box--link">Fullstack</a>
+            </div>
 
-<body>
-  <header class="header">
-    <h1 class="header__title">
-      Kursy
-      <span class="header__title--extra"> Programowania </span>
-    </h1>
-    <div class="header__link-box">
-      <a href="#" class="header__link-box--link">Frontend</a>
-      <a href="#" class="header__link-box--link">Backend</a>
-      <a href="#" class="header__link-box--link">Fullstack</a>
-    </div>
-
-    <p class="header__text">
-      Web-Coders oferuje kursy frontend i backend dla każdego. Efektywne szkolenia, przyjazna atmosfera, doświadczeni
-      instruktorzy. Rozwijaj umiejętności programistyczne z nami!
-    </p>
-    <div class="header__cta-box">
-      <a href="#" class="btn btn--cta-about">O szkole</a>
-      <a href="#" class="btn btn--cta-courses">Wszystkie kursy</a>
-    </div>
-    <nav class="nav">
-      <h2 class="nav__seo">Podstawowa nawigacja strony</h2>
-      <a href="index.html" class="nav__logo">
-        <img src="./assets/images/logo.svg" alt="logo" class="nav__logo--image">
-        <h2 class="nav__logo--name">WebCoders</h2>
-      </a>
-      <div class="nav__links" id="navbar">
-        <a href="#about" class="nav__links--item">Szkoła</a>
-        <a href="#courses" class="nav__links--item">Kursy</a>
-        <a href="#numbers" class="nav__links--item">Liczby</a>
-        <a href="#mentors" class="nav__links--item">Wykładowcy</a>
-        <a href="#" class="nav__links--item nav__links--item-addon">Referencje</a>
-        <a href="#contact" class="btn btn--contact nav__links--item nav__links--item-addon">Kontakt</a>
-      </div>
-      <div class="nav__contact-box">
-        <a href="#references" class="nav__contact-box--references">Referencje</a>
-        <a href="#contact" class="btn btn--contact">Kontakt</a>
-      </div>
-      <img src="./assets/images/ham-icon.svg" class="nav__menu-icon" id="hamburger_button" alt="menu icon">
-    </nav>
-  </header>
-
-  <main class="main">
-    <section id="about" class="about-section">
-      <h2 class="about-section__title">O szkole Web Coders</h2>
-      <div class="about-section__item">
-        <h3 class="about-section__item--title">Dla kogo?</h3>
-        <p class="about-section__item--text">
-          Nasze kursy programowania są dostępne dla każdego, niezależnie od poziomu doświadczenia zawodowego. Zajęcia są
-          intensywne, ale odbywają się w przyjaznej atmosferze, co sprzyja efektywnej nauce. Wymagane są jedynie dobre
-          umiejętności komputerowe, podstawowa znajomość angielskiego, zdolność logicznego myślenia i podstawowa wiedza
-          matematyczna. Dołącz do naszej społeczności i rozwijaj swoje umiejętności programistyczne w komfortowym
-          tempie!
-        </p>
-      </div>
-
-      <img class="about-section__item about-section__item--image" src="./assets/images/placeholder.png" alt="asd">
-
-      <img class="about-section__item about-section__item--image" src="./assets/images/placeholder.png" alt="asd">
-
-      <div class="about-section__item">
-        <h3 class="about-section__item--title">Metody naucznia</h3>
-        <p class="about-section__item--text">
-          Kursy programowania to intensywne warsztaty praktyczne, skoncentrowane na niezbędnych umiejętnościach. Uczymy
-          Cię
-          kodowania od pierwszego dnia, minimalizując teorię do niezbędnego minimum. Nasi instruktorzy to
-          wykwalifikowani
-          programiści z pedagogicznym przygotowaniem.
-        </p>
-      </div>
-
-      <div class="about-section__item">
-        <h3 class="about-section__item--title">Tryby oraz czas twania nauki</h3>
-        <p class="about-section__item--text">
-          Nasi mentorzy opracowali pełen program nauki, dostosowany do dogodnego harmonogramu. Nasze kursy programowania
-          są
-          elastyczne i oferowane w trybie zaocznym lub wieczorowym. Tryb zaoczny kursu modułowego obejmuje 10 zjazdów w
-          wybrane
-          weekendy, zwykle co dwa tygodnie, aby umożliwić systematyczne przyswajanie wiedzy. Szczegółowe informacje o
-          ilości
-          godzin dydaktycznych znajdziesz w sekcji "Kursy programowania".
-
-        </p>
-      </div>
-
-      <img class="about-section__item about-section__item--image" src="./assets/images/placeholder.png" alt="asd">
-
-      <img class="about-section__item about-section__item--image" src="./assets/images/placeholder.png" alt="asd">
-
-      <div class="about-section__item">
-        <h3 class="about-section__item--title">Koszty</h3>
-        <p class="about-section__item--text">
-          Oferujemy płatność w ratach. Harmonogram płatności będzie dołączony do umowy.
-
-          Jeśli szukasz dofinansowania lub zwrotu części kosztów szkolenia, współpracujemy z różnymi instytucjami, które
-          mogą
-          zapewnić zwrot nawet do 25% kosztów.
-
-          Jeśli jesteś osobą bezrobotną, istnieje również możliwość ubiegania się o pełne sfinansowanie szkolenia przez
-          Urząd
-          Pracy. Szczegółowe informacje znajdziesz u nas.
-
-        </p>
-      </div>
-
-    </section>
-
-    <section id="courses" class="courses-section">
-      <h2 class="courses-section__title">Nasze szkolenia</h2>
-      <p class="courses-section__text">
-        Odkryj świat programowania dzięki naszym szkoleniom, które łączą frontend i backend. Naucz się projektować
-        responsywne
-        interfejsy z użyciem HTML, CSS i JavaScript, a następnie opanuj backend w językach takich jak Python czy
-        Node.js.
-        Zdobywaj umiejętności potrzebne do tworzenia kompletnych aplikacji internetowych, a jednocześnie oszczędzaj czas
-        i
-        pieniądze dzięki naszym dostępnym kursom. Rozpocznij swoją drogę do kariery programisty już teraz!
-      </p>
-
-      <div class="course">
-        <p class="course__level">Dla początkujących</p>
-        <h3 class="course__name">Full stack developer</h3>
-        <div class="course__info-box">
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-        </div>
-        <p class="course__list-title">Czego się nauczysz?</p>
-        <ul class="course__list">
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-        </ul>
-        <div class="course__price-box">
-          <p class="course__price-box--old">5.999 PLN</p>
-          <p class="course__price-box--new">5.199 PLN</p>
-        </div>
-        <p class="course__instalment">Możliwość rat 0%</p>
-        <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
-      </div>
-      <div class="course">
-        <p class="course__level">Dla początkujących</p>
-        <h3 class="course__name">Full stack developer</h3>
-        <div class="course__info-box">
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-        </div>
-        <p class="course__list-title">Czego się nauczysz?</p>
-        <ul class="course__list">
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-        </ul>
-        <div class="course__price-box">
-          <p class="course__price-box--old">5.999 PLN</p>
-          <p class="course__price-box--new">5.199 PLN</p>
-        </div>
-        <p class="course__instalment">Możliwość rat 0%</p>
-        <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
-      </div>
-      <div class="course">
-        <p class="course__level">Dla początkujących</p>
-        <h3 class="course__name">Full stack developer</h3>
-        <div class="course__info-box">
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-        </div>
-        <p class="course__list-title">Czego się nauczysz?</p>
-        <ul class="course__list">
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-        </ul>
-        <div class="course__price-box">
-          <p class="course__price-box--old">5.999 PLN</p>
-          <p class="course__price-box--new">5.199 PLN</p>
-        </div>
-        <p class="course__instalment">Możliwość rat 0%</p>
-        <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
-      </div>
-      <div class="course">
-        <p class="course__level">Dla początkujących</p>
-        <h3 class="course__name">Full stack developer</h3>
-        <div class="course__info-box">
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-          <div class="course__info-block">
-            <i class="fa-solid fa-calendar-days course__info-box--icon"></i>
-            <p class="course__info-box--info">30.09.2023r.</p>
-          </div>
-        </div>
-        <p class="course__list-title">Czego się nauczysz?</p>
-        <ul class="course__list">
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-          <li class="course__list--item">css</li>
-        </ul>
-        <div class="course__price-box">
-          <p class="course__price-box--old">5.999 PLN</p>
-          <p class="course__price-box--new">5.199 PLN</p>
-        </div>
-        <p class="course__instalment">Możliwość rat 0%</p>
-        <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
-      </div>
-    </section>
-
-    <section id="payoff" class="payoff-section">
-      <h2 class="payoff-section__title">Jak można spłacić kurs?</h2>
-      <div class="payoff__card">
-        <i class="fa-solid fa-wallet payoff__card--icon"></i>
-        <h3 class="payoff__card--main">środki własne</h3>
-        <p class="payoff__card--text">
-          Wybierz opcję płatności ze swoich środków, uzyskując szybki dostęp do kursu bez konieczności zaciągania
-          dodatkowych
-          zobowiązań. To rozwiązanie daje pełną kontrolę nad budżetem i pozwala rozpocząć naukę natychmiastowo.
-        </p>
-      </div>
-      <div class="payoff__card">
-        <i class="fa-solid fa-coins payoff__card--icon"></i>
-        <h3 class="payoff__card--main">Raty 0%</h3>
-        <p class="payoff__card--text">
-          Dzięki opcji ratalnej bez odsetek masz możliwość wygodnego rozłożenia kosztów kursu na kilka miesięcy, bez
-          obawy o
-          dodatkowe opłaty. To elastyczne rozwiązanie, które umożliwia płacenie za edukację w tempie dostosowanym do
-          Twoich
-          możliwości finansowych.
-        </p>
-      </div>
-      <div class="payoff__card">
-        <i class="fa-solid fa-piggy-bank payoff__card--icon"></i>
-        <h3 class="payoff__card--main">Dofinansowanie</h3>
-        <p class="payoff__card--text">
-          Skorzystaj z dodatkowego wsparcia finansowego poprzez dostępne programy dofinansowania. Ulgi i granty mogą
-          znacząco
-          zredukować koszty kursu, umożliwiając korzystanie z wartościowej edukacji nawet przy ograniczonych środkach
-          własnych. To
-          szansa na rozwój bez nadmiernego obciążenia finansowego.
-        </p>
-      </div>
-    </section>
-
-    <section id="numbers" class="numbers-section">
-      <div class="numbers-grid">
-        <h2 class="numbers-grid__title">Web Coders w liczbach</h2>
-        <div class="number-card">
-          <h3 class="number-card--number">00</h3>
-          <p class="number-card--description">
-            Lorem, ipsum dolor.
-          </p>
-        </div>
-        <div class="number-card">
-          <h3 class="number-card--number">00</h3>
-          <p class="number-card--description">
-            Lorem, ipsum dolor.
-          </p>
-        </div>
-        <div class="number-card">
-          <h3 class="number-card--number">00</h3>
-          <p class="number-card--description">
-            Lorem, ipsum dolor.
-          </p>
-        </div>
-        <div class="number-card">
-          <h3 class="number-card--number">00</h3>
-          <p class="number-card--description">
-            Lorem, ipsum dolor.
-          </p>
-        </div>
-        <div class="number-card">
-          <h3 class="number-card--number">00</h3>
-          <p class="number-card--description">
-            Lorem, ipsum dolor.
-          </p>
-        </div>
-        <div class="number-card">
-          <h3 class="number-card--number">00</h3>
-          <p class="number-card--description">
-            Lorem, ipsum dolor.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="mentors" class="mentors-section">
-      <h2 class="mentors-section__title">Mentorzy</h2>
-      <div class="mentors-section__text">
-        Zajęcia prowadzone przez naszych wykładowców to nie tylko lekcje, to interaktywne sesje, podczas których uczysz
-        się
-        praktycznych umiejętności, niezbędnych w świecie programowania. Ich profesjonalizm i zaangażowanie sprawiają, że
-        nawet
-        najbardziej skomplikowane tematy stają się zrozumiałe.
-      </div>
-      <div class="mentor-card">
-        <img src="./assets/images/pkania-avatar.jpg" alt="avatar" class="mentor-card--avatar">
-
-        <div class="mentor-card__content">
-          <h3 class="mentor-card__content--name">Piotr Kania</h3>
-
-          <p class="mentor-card__content--description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Nemo, quia!
-          </p>
-
-          <div class="mentor-card__skill-box">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-          </div>
-        </div>
-      </div>
-      <div class="mentor-card">
-        <img src="./assets/images/pkania-avatar.jpg" alt="avatar" class="mentor-card--avatar">
-
-        <div class="mentor-card__content">
-          <h3 class="mentor-card__content--name">Piotr Kania</h3>
-
-          <p class="mentor-card__content--description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Nemo, quia!
-          </p>
-
-          <div class="mentor-card__skill-box">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-            <img src="#" alt="css" class="mentor-card__skill-box--skill-icon">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="references" class="references-section">
-      <h2 class="references-section__title">
-        Co mówią o nas inni?
-      </h2>
-      <div class="references-section__holder">
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
+            <p class="header__text">
+                Web-Coders oferuje kursy frontend i backend dla każdego.
+                Efektywne szkolenia, przyjazna atmosfera, doświadczeni
+                instruktorzy. Rozwijaj umiejętności programistyczne z nami!
             </p>
+            <div class="header__cta-box">
+                <a href="#" class="btn btn--cta-about">O szkole</a>
+                <a href="#" class="btn btn--cta-courses">Wszystkie kursy</a>
+            </div>
+            <nav class="nav">
+                <h2 class="nav__seo">Podstawowa nawigacja strony</h2>
+                <a href="index.html" class="nav__logo">
+                    <img
+                        src="./assets/images/logo.svg"
+                        alt="logo"
+                        class="nav__logo--image"
+                    />
+                    <p class="nav__logo--name">WebCoders</p>
+                </a>
+                <div class="nav__links" id="navbar">
+                    <a href="#about" class="nav__links--item">Szkoła</a>
+                    <a href="#courses" class="nav__links--item">Kursy</a>
+                    <a href="#numbers" class="nav__links--item">Liczby</a>
+                    <a href="#mentors" class="nav__links--item">Wykładowcy</a>
+                    <a href="#" class="nav__links--item nav__links--item-addon"
+                        >Referencje</a
+                    >
+                    <a
+                        href="#contact"
+                        class="btn btn--contact nav__links--item nav__links--item-addon"
+                        >Kontakt</a
+                    >
+                </div>
+                <div class="nav__contact-box">
+                    <a href="#references" class="nav__contact-box--references"
+                        >Referencje</a
+                    >
+                    <a href="#contact" class="btn btn--contact">Kontakt</a>
+                </div>
+                <img
+                    src="./assets/images/ham-icon.svg"
+                    class="nav__menu-icon"
+                    id="hamburger_button"
+                    alt="menu icon"
+                />
+            </nav>
+        </header>
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+        <main class="main">
+            <section id="about" class="about-section">
+                <h2 class="about-section__title">O szkole Web Coders</h2>
+                <div class="about-section__item">
+                    <h3 class="about-section__item--title">Dla kogo?</h3>
+                    <p class="about-section__item--text">
+                        Nasze kursy programowania są dostępne dla każdego,
+                        niezależnie od poziomu doświadczenia zawodowego. Zajęcia
+                        są intensywne, ale odbywają się w przyjaznej atmosferze,
+                        co sprzyja efektywnej nauce. Wymagane są jedynie dobre
+                        umiejętności komputerowe, podstawowa znajomość
+                        angielskiego, zdolność logicznego myślenia i podstawowa
+                        wiedza matematyczna. Dołącz do naszej społeczności i
+                        rozwijaj swoje umiejętności programistyczne w
+                        komfortowym tempie!
+                    </p>
+                </div>
 
-          </div>
+                <img
+                    class="about-section__item about-section__item--image"
+                    src="./assets/images/placeholder.png"
+                    alt="asd"
+                />
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+                <img
+                    class="about-section__item about-section__item--image"
+                    src="./assets/images/placeholder.png"
+                    alt="asd"
+                />
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                <div class="about-section__item">
+                    <h3 class="about-section__item--title">Metody naucznia</h3>
+                    <p class="about-section__item--text">
+                        Kursy programowania to intensywne warsztaty praktyczne,
+                        skoncentrowane na niezbędnych umiejętnościach. Uczymy
+                        Cię kodowania od pierwszego dnia, minimalizując teorię
+                        do niezbędnego minimum. Nasi instruktorzy to
+                        wykwalifikowani programiści z pedagogicznym
+                        przygotowaniem.
+                    </p>
+                </div>
 
-          </div>
+                <div class="about-section__item">
+                    <h3 class="about-section__item--title">
+                        Tryby oraz czas twania nauki
+                    </h3>
+                    <p class="about-section__item--text">
+                        Nasi mentorzy opracowali pełen program nauki,
+                        dostosowany do dogodnego harmonogramu. Nasze kursy
+                        programowania są elastyczne i oferowane w trybie
+                        zaocznym lub wieczorowym. Tryb zaoczny kursu modułowego
+                        obejmuje 10 zjazdów w wybrane weekendy, zwykle co dwa
+                        tygodnie, aby umożliwić systematyczne przyswajanie
+                        wiedzy. Szczegółowe informacje o ilości godzin
+                        dydaktycznych znajdziesz w sekcji "Kursy programowania".
+                    </p>
+                </div>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+                <img
+                    class="about-section__item about-section__item--image"
+                    src="./assets/images/placeholder.png"
+                    alt="asd"
+                />
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                <img
+                    class="about-section__item about-section__item--image"
+                    src="./assets/images/placeholder.png"
+                    alt="asd"
+                />
 
-          </div>
+                <div class="about-section__item">
+                    <h3 class="about-section__item--title">Koszty</h3>
+                    <p class="about-section__item--text">
+                        Oferujemy płatność w ratach. Harmonogram płatności
+                        będzie dołączony do umowy. Jeśli szukasz dofinansowania
+                        lub zwrotu części kosztów szkolenia, współpracujemy z
+                        różnymi instytucjami, które mogą zapewnić zwrot nawet do
+                        25% kosztów. Jeśli jesteś osobą bezrobotną, istnieje
+                        również możliwość ubiegania się o pełne sfinansowanie
+                        szkolenia przez Urząd Pracy. Szczegółowe informacje
+                        znajdziesz u nas.
+                    </p>
+                </div>
+            </section>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+            <section id="courses" class="courses-section">
+                <h2 class="courses-section__title">Nasze szkolenia</h2>
+                <p class="courses-section__text">
+                    Odkryj świat programowania dzięki naszym szkoleniom, które
+                    łączą frontend i backend. Naucz się projektować responsywne
+                    interfejsy z użyciem HTML, CSS i JavaScript, a następnie
+                    opanuj backend w językach takich jak Python czy Node.js.
+                    Zdobywaj umiejętności potrzebne do tworzenia kompletnych
+                    aplikacji internetowych, a jednocześnie oszczędzaj czas i
+                    pieniądze dzięki naszym dostępnym kursom. Rozpocznij swoją
+                    drogę do kariery programisty już teraz!
+                </p>
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                <div class="course">
+                    <p class="course__level">Dla początkujących</p>
+                    <h3 class="course__name">Full stack developer</h3>
 
-          </div>
+                    <div class="course__info-box">
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+                    <p class="course__list-title">Czego się nauczysz?</p>
+                    <ul class="course__list">
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                    </ul>
+                    <div class="course__price-box">
+                        <p class="course__price-box--old">5.999 PLN</p>
+                        <p class="course__price-box--new">5.199 PLN</p>
+                    </div>
+                    <p class="course__instalment">Możliwość rat 0%</p>
+                    <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
+                </div>
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                <div class="course">
+                    <p class="course__level">Dla początkujących</p>
+                    <h3 class="course__name">Full stack developer</h3>
 
-          </div>
+                    <div class="course__info-box">
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+                    <p class="course__list-title">Czego się nauczysz?</p>
+                    <ul class="course__list">
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                    </ul>
+                    <div class="course__price-box">
+                        <p class="course__price-box--old">5.999 PLN</p>
+                        <p class="course__price-box--new">5.199 PLN</p>
+                    </div>
+                    <p class="course__instalment">Możliwość rat 0%</p>
+                    <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
+                </div>
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                <div class="course">
+                    <p class="course__level">Dla początkujących</p>
+                    <h3 class="course__name">Full stack developer</h3>
 
-          </div>
+                    <div class="course__info-box">
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+                    <p class="course__list-title">Czego się nauczysz?</p>
+                    <ul class="course__list">
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                    </ul>
+                    <div class="course__price-box">
+                        <p class="course__price-box--old">5.999 PLN</p>
+                        <p class="course__price-box--new">5.199 PLN</p>
+                    </div>
+                    <p class="course__instalment">Możliwość rat 0%</p>
+                    <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
+                </div>
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                <div class="course">
+                    <p class="course__level">Dla początkujących</p>
+                    <h3 class="course__name">Full stack developer</h3>
 
-          </div>
+                    <div class="course__info-box">
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                        <div class="course__info-block">
+                            <i
+                                class="fa-solid fa-calendar-days course__info-block--icon"
+                            ></i>
+                            <p class="course__info-block--info">30.09.2023r.</p>
+                        </div>
+                    </div>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+                    <p class="course__list-title">Czego się nauczysz?</p>
+                    <ul class="course__list">
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                        <li class="course__list--item">css</li>
+                    </ul>
+                    <div class="course__price-box">
+                        <p class="course__price-box--old">5.999 PLN</p>
+                        <p class="course__price-box--new">5.199 PLN</p>
+                    </div>
+                    <p class="course__instalment">Możliwość rat 0%</p>
+                    <a href="#" class="btn btn--explore">Poznaj szczegóły</a>
+                </div>
+            </section>
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+            <section id="payoff" class="payoff-section">
+                <h2 class="payoff-section__title">Jak można spłacić kurs?</h2>
+                <div class="payoff__card">
+                    <i class="fa-solid fa-wallet payoff__card--icon"></i>
+                    <h3 class="payoff__card--main">środki własne</h3>
+                    <p class="payoff__card--text">
+                        Wybierz opcję płatności ze swoich środków, uzyskując
+                        szybki dostęp do kursu bez konieczności zaciągania
+                        dodatkowych zobowiązań. To rozwiązanie daje pełną
+                        kontrolę nad budżetem i pozwala rozpocząć naukę
+                        natychmiastowo.
+                    </p>
+                </div>
+                <div class="payoff__card">
+                    <i class="fa-solid fa-coins payoff__card--icon"></i>
+                    <h3 class="payoff__card--main">Raty 0%</h3>
+                    <p class="payoff__card--text">
+                        Dzięki opcji ratalnej bez odsetek masz możliwość
+                        wygodnego rozłożenia kosztów kursu na kilka miesięcy,
+                        bez obawy o dodatkowe opłaty. To elastyczne rozwiązanie,
+                        które umożliwia płacenie za edukację w tempie
+                        dostosowanym do Twoich możliwości finansowych.
+                    </p>
+                </div>
+                <div class="payoff__card">
+                    <i class="fa-solid fa-piggy-bank payoff__card--icon"></i>
+                    <h3 class="payoff__card--main">Dofinansowanie</h3>
+                    <p class="payoff__card--text">
+                        Skorzystaj z dodatkowego wsparcia finansowego poprzez
+                        dostępne programy dofinansowania. Ulgi i granty mogą
+                        znacząco zredukować koszty kursu, umożliwiając
+                        korzystanie z wartościowej edukacji nawet przy
+                        ograniczonych środkach własnych. To szansa na rozwój bez
+                        nadmiernego obciążenia finansowego.
+                    </p>
+                </div>
+            </section>
 
-          </div>
+            <section id="numbers" class="numbers-section">
+                <div class="numbers-grid">
+                    <h2 class="numbers-grid__title">Web Coders w liczbach</h2>
+                    <div class="number-card">
+                        <h3 class="number-card--number">00</h3>
+                        <p class="number-card--description">
+                            Lorem, ipsum dolor.
+                        </p>
+                    </div>
+                    <div class="number-card">
+                        <h3 class="number-card--number">00</h3>
+                        <p class="number-card--description">
+                            Lorem, ipsum dolor.
+                        </p>
+                    </div>
+                    <div class="number-card">
+                        <h3 class="number-card--number">00</h3>
+                        <p class="number-card--description">
+                            Lorem, ipsum dolor.
+                        </p>
+                    </div>
+                    <div class="number-card">
+                        <h3 class="number-card--number">00</h3>
+                        <p class="number-card--description">
+                            Lorem, ipsum dolor.
+                        </p>
+                    </div>
+                    <div class="number-card">
+                        <h3 class="number-card--number">00</h3>
+                        <p class="number-card--description">
+                            Lorem, ipsum dolor.
+                        </p>
+                    </div>
+                    <div class="number-card">
+                        <h3 class="number-card--number">00</h3>
+                        <p class="number-card--description">
+                            Lorem, ipsum dolor.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+            <section id="mentors" class="mentors-section">
+                <h2 class="mentors-section__title">Mentorzy</h2>
+                <div class="mentors-section__text">
+                    Zajęcia prowadzone przez naszych wykładowców to nie tylko
+                    lekcje, to interaktywne sesje, podczas których uczysz się
+                    praktycznych umiejętności, niezbędnych w świecie
+                    programowania. Ich profesjonalizm i zaangażowanie sprawiają,
+                    że nawet najbardziej skomplikowane tematy stają się
+                    zrozumiałe.
+                </div>
+                <div class="mentor-card">
+                    <img
+                        src="./assets/images/pkania-avatar.jpg"
+                        alt="avatar"
+                        class="mentor-card--avatar"
+                    />
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                    <div class="mentor-card__content">
+                        <h3 class="mentor-card__content--name">Piotr Kania</h3>
 
-          </div>
+                        <p class="mentor-card__content--description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Nemo, quia!
+                        </p>
 
-        </div>
-        <div class="references-box">
-          <div class="reference">
-            <p class="reference__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit magni aliquid placeat? Accusamus
-              perferendis sapiente eius esse eveniet eaque.
-            </p>
+                        <div class="mentor-card__skill-box">
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="mentor-card">
+                    <img
+                        src="./assets/images/pkania-avatar.jpg"
+                        alt="avatar"
+                        class="mentor-card--avatar"
+                    />
 
-            <h2 class="reference__name">
-              Jan Kowalski
-            </h2>
-            <i class="reference__icon fa-brands fa-google"> </i>
+                    <div class="mentor-card__content">
+                        <h3 class="mentor-card__content--name">Piotr Kania</h3>
 
-          </div>
-        </div>
+                        <p class="mentor-card__content--description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Nemo, quia!
+                        </p>
 
-      </div>
+                        <div class="mentor-card__skill-box">
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                            <img
+                                src="#"
+                                alt="css"
+                                class="mentor-card__skill-box--skill-icon"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <button onclick="stopAnimation()" class="btn btn--stop references-section__phone-stopper">
-        <i class="fa-solid fa-pause"></i>
-        Zatrzymaj
-      </button>
-    </section>
+            <section id="references" class="references-section">
+                <h2 class="references-section__title">Co mówią o nas inni?</h2>
+                <div class="references-section__holder">
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
-    <section id="contact" class="contact-section">
-      <h2 class="contact-section__title">Kontakt</h2>
-      <form class="form">
-        <div class="form__name-box">
-          <input class="form__name-box--name" type="text" id="name" placeholder="Imię">
-          <input class="form__name-box--email" type="text" id="email" placeholder="Email">
-        </div>
-        <textarea placeholder="Treść" name="content" id="content" cols="30" rows="10"
-          class="form__placeholder"></textarea>
-        <div>
-          <input class="btn btn--submit" type="submit" value="Wyślij">
-        </div>
-      </form>
-      <div class="contact-section__map-box">
-        <iframe class="contact-section__map-box--map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.178422815341!2d19.9419897!3d50.0642201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1047a38be9%3A0x82c7797280010b9a!2sTEB%20Edukacja!5e0!3m2!1spl!2spl!4v1698881681804!5m2!1spl!2spl"
-          width="600" height="450" style="border: 0" allowfullscreen="" title="map" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </section>
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
-  </main>
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
-  <footer class="footer-background">
-    <div class="footer">
-      <h2 class="footer__title">
-        Web-Coders
-      </h2>
-      <ul class="footer__menu-list">
-        <li>
-          <a href="#about" class="footer__menu-list--item">
-            O szkole
-          </a>
-        </li>
-        <li class="footer__menu-list--item">
-          <a href="#courses" class="footer__menu-list--item">
-            Kursy
-          </a>
-        </li>
-        <li class="footer__menu-list--item">
-          <a href="#payoff" class="footer__menu-list--item">
-            Opłacenie
-          </a>
-        </li>
-        <li class="footer__menu-list--item">
-          <a href="#numbers" class="footer__menu-list--item">
-            Statystyki
-          </a>
-        </li>
-        <li class="footer__menu-list--item">
-          <a href="#mentors" class="footer__menu-list--item">
-            Mentorzy
-          </a>
-        </li>
-        <li class="footer__menu-list--item">
-          <a href="#contact" class="footer__menu-list--item">
-            Kontakt
-          </a>
-        </li>
-      </ul>
-      <ul class="footer__contact">
-        <li>
-          <a href="index.html" class="footer__contact--item">
-            <i class="fa-solid fa-house"> </i>
-            <p>Web-Coders.pl</p>
-          </a>
-        </li>
-        <li class="footer__contact--item">
-          <i class="fa-solid fa-map-pin"></i>
-          <p>Kraków, ul. Zacisze 8 (sale szkoleniowe)</p>
-        </li>
-        <li class="footer__contact--item">
-          <i class="fa-solid fa-map-pin"></i>
-          <p>Kraków, ul. Szpitalna 38/5 (sale szkoleniowe)</p>
-        </li>
-        <li class="footer__contact--item">
-          <i class="fa-solid fa-map-pin"></i>
-          <p>
-            Warszawa, ul. Jana Pankiewicza 3 (sale szkoleniowe)
-          </p>
-        </li>
-        <li class="footer__contact--item">
-          <i class="fa-solid fa-phone"></i>
-          <p>604 603 062</p>
-        </li>
-        <li class="footer__contact--item">
-          <i class="fa-solid fa-envelope"></i>
-          <p>kontakt@web-coders.pl</p>
-        </li>
-      </ul>
-      <div class="footer__social-box">
-        <a href="https://www.youtube.com/" target="_blank" class="footer__social-box--item">
-          <i class="fa-brands fa-youtube"></i>
-          <p>Youtube</p>
-        </a>
-        <a href="https://www.facebook.com/" target="_blank" class="footer__social-box--item">
-          <i class="fa-brands fa-facebook"></i>
-          <p>Facebook</p>
-        </a>
-      </div>
-      <!-- <div class="footer__content">
-      </div> -->
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
-      <hr class="footer__break-line">
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
-      <p class="footer__credits">
-        Copyright © 2018 Web-Coders.pl
-      </p>
-      <p class="footer__credits">
-        Projekt i wykonanie: Michał Mosór
-      </p>
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
-    </div>
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
-  </footer>
-</body>
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
 
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
+
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                    <div class="references-box">
+                        <div class="reference">
+                            <p class="reference__text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Sunt fugit magni aliquid
+                                placeat? Accusamus perferendis sapiente eius
+                                esse eveniet eaque.
+                            </p>
+
+                            <p class="reference__name">Jan Kowalski</p>
+                            <i class="reference__icon fa-brands fa-google"> </i>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    onclick="stopAnimation()"
+                    class="btn btn--stop references-section__phone-stopper"
+                >
+                    <i class="fa-solid fa-pause"></i>
+                    Zatrzymaj
+                </button>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2 class="contact-section__title">Kontakt</h2>
+                <form class="form">
+                    <div class="form__name-box">
+                        <input
+                            class="form__name-box--name"
+                            type="text"
+                            id="name"
+                            placeholder="Imię"
+                        />
+                        <input
+                            class="form__name-box--email"
+                            type="text"
+                            id="email"
+                            placeholder="Email"
+                        />
+                    </div>
+                    <textarea
+                        placeholder="Treść"
+                        name="content"
+                        id="content"
+                        cols="30"
+                        rows="10"
+                        class="form__placeholder"
+                    ></textarea>
+                    <div>
+                        <input
+                            class="btn btn--submit"
+                            type="submit"
+                            value="Wyślij"
+                        />
+                    </div>
+                </form>
+                <div class="contact-section__map-box">
+                    <iframe
+                        class="contact-section__map-box--map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.178422815341!2d19.9419897!3d50.0642201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b1047a38be9%3A0x82c7797280010b9a!2sTEB%20Edukacja!5e0!3m2!1spl!2spl!4v1698881681804!5m2!1spl!2spl"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        title="map"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-background">
+            <div class="footer">
+                <p class="footer__title">Web-Coders</p>
+                <ul class="footer__menu-list">
+                    <li>
+                        <a href="#about" class="footer__menu-list--item">
+                            O szkole
+                        </a>
+                    </li>
+                    <li class="footer__menu-list--item">
+                        <a href="#courses" class="footer__menu-list--item">
+                            Kursy
+                        </a>
+                    </li>
+                    <li class="footer__menu-list--item">
+                        <a href="#payoff" class="footer__menu-list--item">
+                            Opłacenie
+                        </a>
+                    </li>
+                    <li class="footer__menu-list--item">
+                        <a href="#numbers" class="footer__menu-list--item">
+                            Statystyki
+                        </a>
+                    </li>
+                    <li class="footer__menu-list--item">
+                        <a href="#mentors" class="footer__menu-list--item">
+                            Mentorzy
+                        </a>
+                    </li>
+                    <li class="footer__menu-list--item">
+                        <a href="#contact" class="footer__menu-list--item">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__contact">
+                    <li class="footer__contact--item">
+                        <a href="index.html" class="footer__contact--link">
+                            Web-Coders.pl
+                        </a>
+                    </li>
+                    <li class="footer__contact--item">
+                        Kraków, ul. Zacisze 8 (sale szkoleniowe)
+                    </li>
+                    <li class="footer__contact--item">
+                        Kraków, ul. Szpitalna 38/5 (sale szkoleniowe)
+                    </li>
+                    <li class="footer__contact--item">
+                        Warszawa, ul. Jana Pankiewicza 3 (sale szkoleniowe)
+                    </li>
+                    <li class="footer__contact--item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>604 603 062</p>
+                    </li>
+                    <li class="footer__contact--item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>kontakt@web-coders.pl</p>
+                    </li>
+                </ul>
+                <div class="footer__social-box">
+                    <a
+                        href="https://www.youtube.com/"
+                        target="_blank"
+                        class="footer__social-box--item"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                        <p>Youtube</p>
+                    </a>
+                    <a
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        class="footer__social-box--item"
+                    >
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <hr class="footer__break-line" />
+
+                <p class="footer__credits">Copyright © 2018 Web-Coders.pl</p>
+                <p class="footer__credits">Projekt i wykonanie: Michał Mosór</p>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -3,13 +3,12 @@
 .mentor-card {
     grid-column: span 12;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     gap: 2.4rem;
-    max-width: 50rem;
 
     &--avatar {
         border-radius: 100rem;
-        max-width: 35%;
         outline: 0.5rem solid $color-primary;
         padding: 0.5rem;
     }
@@ -22,6 +21,8 @@
 
         &--description {
             font-size: 1.6rem;
+            line-height: 130%;
+            color: $color-text-grey;
         }
     }
 
@@ -30,9 +31,12 @@
         display: flex;
         gap: 0.8rem;
     }
-}
-@media only screen and (min-width: $bp-lg) {
-    .mentor-card {
+
+    @media only screen and (min-width: $bp-xs) {
+        flex-direction: row;
+    }
+
+    @media only screen and (min-width: $bp-lg) {
         grid-column: 8 / span 6;
     }
 }

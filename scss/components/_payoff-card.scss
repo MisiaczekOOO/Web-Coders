@@ -21,20 +21,18 @@
         line-height: 160%;
         color: $color-text-grey;
     }
-}
-
-@media only screen and (min-width: $bp-xs) {
-    .payoff__card {
+    @media only screen and (min-width: $bp-xs) {
         grid-column: span 6;
         &:last-child {
             grid-column: 4 / span 6;
         }
     }
-}
 
-@media only screen and (min-width: $bp-md) {
-    .payoff__card,
-    .payoff__card:last-child {
+    @media only screen and (min-width: $bp-md) {
         grid-column: span 4;
+
+        &:last-child {
+            grid-column: span 4;
+        }
     }
 }

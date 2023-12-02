@@ -46,14 +46,19 @@
     &__contact {
         grid-column: span 12;
         list-style: none;
-        font-size: 1.6rem;
-        &--item {
-            margin-bottom: 0.8rem;
+        font-size: 1.8rem;
+
+        &--item,
+        &--link {
+            gap: 0.8rem;
+            text-align: center;
+            color: $color-white;
             display: flex;
             align-items: center;
-            gap: 2.4rem;
-            color: $color-white;
             justify-content: center;
+        }
+        &--item {
+            margin-bottom: 0.8rem;
         }
     }
 
@@ -93,31 +98,3 @@
         }
     }
 }
-
-// @media only screen and (max-width: 640px) {
-//     .footer {
-//         &__menu-list {
-//             display: flex;
-//             justify-content: space-around;
-//             flex-wrap: wrap;
-//             margin-block: 2.4rem;
-//             gap: 2.4rem;
-//         }
-
-//         &__content {
-//             flex-direction: column;
-//             gap: 2.4rem;
-//         }
-//         &__social-box {
-//             justify-content: center;
-//             gap: 2.4rem;
-//         }
-
-//         &__contact {
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             gap: 1.6rem;
-//         }
-//     }
-// }
