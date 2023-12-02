@@ -2,6 +2,7 @@ const hamburger_button = document.querySelector("#hamburger_button")
 const navbar = document.querySelector("#navbar")
 const navbarList = document.querySelector(".nav__links")
 const body = document.querySelector("body")
+const phone__addon = document.querySelectorAll(".phone-item")
 
 navbarList.addEventListener("click", () => {
     if (navbar.classList.contains("navbar-phone")) {

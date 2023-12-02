@@ -530,9 +530,6 @@
 .nav__links--item:hover:not(:last-child) {
   color: #598ef3;
 }
-.nav__links--item-addon {
-  display: none;
-}
 .nav__contact-box {
   grid-column: span 3;
   justify-content: flex-end;
@@ -582,8 +579,15 @@
   z-index: 2;
   width: 100vw;
 }
+.navbar-phone--item-addon {
+  display: none;
+}
 .navbar-phone--item {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
+  font-weight: 900;
+  width: 75%;
+  text-align: center;
+  display: block;
 }
 
 .footer-background {
@@ -875,8 +879,6 @@ body {
   margin: 0 auto;
   gap: 2.4rem;
   padding: 10vh 5%;
-  row-gap: 4.8rem;
-  width: 100%;
 }
 .payoff-section__title {
   font-size: 4.8rem;
@@ -890,7 +892,6 @@ body {
 .numbers-section {
   width: 100%;
   background-color: #598ef3;
-  justify-content: center;
 }
 .numbers-section__title {
   padding-inline: 5%;
@@ -927,16 +928,12 @@ body {
   line-height: 120%;
   grid-column: span 12;
 }
-.mentors-section__content {
-  display: flex;
-  gap: 4.8rem;
-}
 .mentors-section__text {
   grid-column: span 12;
-  grid-row: span 2;
   font-size: 2.4rem;
   color: #d0d0d0;
   line-height: 135%;
+  margin-bottom: 1.6rem;
 }
 
 .contact-section {
@@ -971,7 +968,7 @@ body {
   margin: 0 auto;
   gap: 2.4rem;
   padding: 10vh 5%;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 .references-section__title {
   font-size: 4.8rem;
